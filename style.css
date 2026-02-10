@@ -119,10 +119,13 @@ header a {
     column-gap: 5%;
 }
 
+
 .section-title {
     display: inline-block;
     font-size: 64px;
     letter-spacing: 0.1em;
+    border-bottom: 4px solid #465DAA; /* Add underline with the same color */
+    padding-bottom: 10px; /* Add spacing between text and underline */
 }
 
 .profile h2 {
@@ -132,18 +135,19 @@ header a {
 
 .profile h3 {
     margin-top: 72px;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .profile p {
     margin-top: 24px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .profile img {
-    width: 47.5%;
+    width: 55%;
+    border-radius: 20px; /* 角を丸くする */
+    margin-left: 40px; /* 右に配置するための余白を追加 */
 }
-
 
 .school-club {
     margin-top: 200px;
