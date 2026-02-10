@@ -58,21 +58,54 @@ header a {
 
 .firstview h1 {
     font-size: 64px;
+    color:hotpink;
+    z-index: 2;
 }
 
 .firstview p {
     font-size: 14px;
+    color:hotpink;
+    z-index: 2;
 }
 
+/* Updated background for the firstview section */
 .firstview {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 800px;
-    background-image: url('images/hero-image.png');
+    background-image: url('images/mapoko_background.jpg');
+    background-color: #fadbda; /* Fallback color */
     background-position: center;
     background-size: cover;
+}
+
+/* Style for the firstview content */
+.firstview-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /* Increased from 40px to 60px */
+}
+
+/* Style for the circular image */
+.circle-image {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Added shadow */
+    border: 10px solid rgba(250, 219, 218, 1); /* Semi-transparent border */
+}
+
+/* Add semi-transparent white background for the text in firstview */
+.firstview-content .text {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 20px;
+    display: inline-block; /* Ensure it wraps tightly around the text */
 }
 
 .about {
@@ -132,7 +165,7 @@ header a {
     width: 100%;
     height: 300px;
     border-radius: 16px;
-    object-fit: cover;
+    object-fit: y;
 }
 
 .school-club a {
@@ -143,7 +176,7 @@ header a {
 }
 
 .favorite {
-      padding: 140px 0;
+      padding: 200px 0;
       text-align: center;
       background-image: url('images/favorite-background.png');
       background-size: cover;
@@ -202,7 +235,7 @@ header a {
 }
 
 .contact .section-title {
-    border-bottom: 3px solid #ff9900;
+    bottom: 3px solid #ff9900;
 }
 
 .contact .sns-twitter {
@@ -227,7 +260,7 @@ header a {
 .contact p {
     margin-top: 48px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: w;
     line-height: 2;
     text-align: left;
     letter-spacing: 0.1em;
@@ -249,7 +282,7 @@ footer{
     align-items: center;
     justify-content: center;
     height: 80px;
-    font-size: 14px;
+    font-size: 144;
     letter-spacing: 0.1em;
     background-color: #edece7;
 }
@@ -337,4 +370,22 @@ footer{
      width: 100%;
      line-height: 60px;
     }
+}
+
+/* Style for the overlapping kitty image */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.kitty-image {
+    position: absolute;
+    bottom: 100px; /* Moved further up */
+    right: 150px; /* Moved further left */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid rgba(255, 188, 217, 1); /* Updated to #ffbcd9 with 0.8 opacity */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
