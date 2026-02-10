@@ -184,14 +184,14 @@ header a {
 .favorite {
       padding: 200px 0;
       text-align: center;
-      background-image: url('images/favorite-background.png');
+      background-image: url('images/mapoko_main.jpg');
       background-size: cover;
       background-position: center;
+      color: #333333;
 }
 
 .favorite .section-title {
-    color: #ffffff;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 4px solid rgb(107, 102, 102);
 }
 
 .favorite-content img {
@@ -230,6 +230,7 @@ header a {
     display: incline-block;
     font-size: 64px;
     letter-spacing: 0.1em;
+    color: #333333;
 }
 
 .contact {
@@ -245,17 +246,7 @@ header a {
     bottom: 3px solid #ff9900;
 }
 
-.contact .sns-twitter {
-    background-color: #00acee;
-}
 
-.contact .sns-facebook {
-    background-color: #3b5998;
-}
-
-.contact .sns-website {
-    background-color: #333333;
-}
 
 .contact .sns {
     display: flex;
@@ -282,6 +273,20 @@ header a {
     color: #ffffff;
     letter-spacing: 0.1em;
     border-radius: 16px;
+}
+
+.contact img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; /* Make the images circular */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 2px solid #333333; /* Add a border for better visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for a polished look */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.contact img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 footer{
@@ -411,6 +416,15 @@ footer{
     display: block;
     margin-top: 20px;
     width: 45px;
+    height: auto;
+    left: 80%;
+}
+
+.favorite-content .koresawa {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    width: 50px;
     height: auto;
     left: 80%;
 }
