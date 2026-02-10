@@ -392,8 +392,8 @@ footer{
 
 .kitty-image {
     position: absolute;
-    bottom: 100px; /* Moved further up */
-    right: 150px; /* Moved further left */
+    bottom: 15%; /* Moved further up */
+    right: 10%; /* Moved further left */
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -405,7 +405,7 @@ footer{
 .kitty-ribbon {
     z-index: 3;
     position: absolute;
-    bottom: 500px; /* Moved further up */
+    bottom: 520px; /* Moved further up */
     right: 740px; /* Moved further left */
     width: 200px; /* Reduce size while maintaining aspect ratio */
     height: auto;
@@ -427,4 +427,15 @@ footer{
     width: 50px;
     height: auto;
     left: 80%;
+}
+
+@media (max-width: 1920px) {
+    .kitty-ribbon {
+    z-index: 3;
+    position: absolute;
+    bottom: 485px; 
+    right: 735px; 
+    width: 200px; 
+    height: auto;
+}
 }
